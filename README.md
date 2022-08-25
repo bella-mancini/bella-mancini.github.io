@@ -1,2 +1,3 @@
 # bella-mancini.github.io
-repository for Web 2200
+
+***This is the repo that will be my future website.***
