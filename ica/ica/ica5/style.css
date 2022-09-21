@@ -11,14 +11,14 @@ body {
   background-color: #ccc;
 
   background: 
-  linear-gradient(
+  /* linear-gradient(
     to bottom,
     rgba(0,0,0,0.25) 0%,
     rgba(0,0,0,0) 25%,
     rgba(0,0,0,0) 50%,
     rgba(0,0,0,0) 75%,
     rgba(0,0,0,0.25)100%,
-  ),
+  ),*/
     top / contain no-repeat url(top-image.png), 
     bottom / contain no-repeat url(bottom-image.png);
   
