@@ -1,0 +1,42 @@
+.regular {
+    background-color: #FDF1E6;
+}
+.inverted {
+    background-color: #3B4E3D;
+}
+
+p {
+
+    font-family: 'Dashiell-Fine';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 78px;
+    color: rgb(204, 229, 199);
+
+}
+
+h1 {
+    font-family: 'Dashiell-Fine';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 78px;
+    color: rgb(204, 229, 199);
+}
+
+h2 {
+    font-family: 'Dashiell-Fine';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;  
+}
+
+.inverted p, h1, h2 {
+    color: #FDF1E6;
+}
+
+.regular p, h1, h2 {
+    color: #3B4E3D;
+}
