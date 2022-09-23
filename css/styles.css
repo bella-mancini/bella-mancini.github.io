@@ -9,17 +9,15 @@ p {
 
     font-family: 'Dashiell-Fine';
     font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 78px;
+    font-size: 16px;
+    line-height: 36px;
     color: rgb(204, 229, 199);
-
 }
 
 h1 {
     font-family: 'Dashiell-Fine';
     font-style: normal;
-    font-weight: 400;
+    align-content: center;
     font-size: 64px;
     line-height: 78px;
     color: rgb(204, 229, 199);
@@ -28,15 +26,35 @@ h1 {
 h2 {
     font-family: 'Dashiell-Fine';
     font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
+    font-size: 24px;
     line-height: 58px;  
 }
 
+a {
+    font-family: 'Dashiell-Fine';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 50px;
+    color: #FDF1E6;;
+}
+
+
+
+.inverted p {
+    text-indent:35%;
+}
 .inverted p, h1, h2 {
     color: #FDF1E6;
+    
 }
 
 .regular p, h1, h2 {
     color: #3B4E3D;
 }
+
+.inverted a:hover {
+    color: rgb(204, 229, 199);
+}
+
+
+  
