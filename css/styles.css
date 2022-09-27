@@ -1,7 +1,10 @@
+/*
 .regular {
     background-color: #FDF1E6;
 }
-
+.inverted {
+    background-color: #3B4E3D;
+}
 
 .logo {
     font-size: 200%;
@@ -70,6 +73,100 @@ nav {
 .inverted a:hover {
     color: rgb(204, 229, 199);
 }
+*/
+body {
+    background-color: #3B4E3D;
+    color: #FDF1E6;
+    margin: 0;
+    font: 1.2em / dashiell-fine, serif;;
+  }
 
+  article {
+    margin-top: 100px;
+    font-size: 16pt;
+  }
+  a {
+    font-style: normal;
+    color: rgb(204, 229, 199);
+  }
+
+  img {
+      max-width: 100%;
+      display: block;
+      float: left;
+      margin-right: 20px;
+  }
+  
+  .logo {
+    font-size: 250%;
+    padding: 35px 20px;
+    margin: 0 auto;
+    
+    position: sticky;
+    text-align: center;
+    background-color: #FDF1E6;
+    color:#3B4E3D;
+    
+  }
+  
+  .grid {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+  }
+  
+  nav {
+    
+    padding: 1fr;
+    left: 0;
+    position: fixed;
+    float:left;
+    display: block;
+    margin-top: 2fr;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    display: inline-block;
+    justify-content: space-evenly;
+    margin-top: 300%;
+    font-size: 16pt;
+
+
+  }
+  
+  nav a  {
+    color: #FDF1E6;
+    text-decoration: none;
+    padding: .5em 1em;
+    margin-top: 2fr;
+  }
+
+  nav a :hover{
+    color:rgb(204, 229, 199);
+    text-decoration:none;
+    padding: .5em 1em;
+    font-size: largerx;
+    
+  }
+  
+  .photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* repeat(2,200px);**/
+    column-gap: 1px;
+    
+  }
+
+  .feature {
+      width: 200px;
+  }
 
   
