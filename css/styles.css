@@ -1,14 +1,23 @@
 .regular {
     background-color: #FDF1E6;
 }
-.inverted {
-    background-color: #3B4E3D;
-}
+
+
+.logo {
+    font-size: 200%;
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width: 980px;
+    font-family: dashiell-fine, serif;
+    font-style: normal;
+    color: rgb(204, 229, 199);
+  }
 
 p {
 
-    font-family: 'Dashiell-Fine';
+    font-family: dashiell-fine, serif;
     font-style: normal;
+    font-weight: 300;
     font-size: 16px;
     line-height: 36px;
     color: rgb(204, 229, 199);
@@ -35,9 +44,15 @@ a {
     font-style: normal;
     font-size: 12px;
     line-height: 50px;
-    color: #FDF1E6;;
+    color: #FDF1E6;
 }
 
+nav {
+    background-color: #FDF1E6;
+    padding: .5em;
+    top: 0;
+    position: sticky;
+}
 
 
 .inverted p {
