@@ -6,8 +6,22 @@
         margin: 0;
         font-family: dashiell-fine, serif;
         font-style: normal;
-        display: grid;
+        
         font-size: 20px;
+    }
+
+    h1 {
+        margin: 0;
+        font-family: dashiell-fine, serif;
+        font-style: normal;
+        display: grid;
+    }
+
+    h2 {
+        margin: 0;
+        font-family: dashiell-fine, serif;
+        font-style: normal;
+        display: grid;
     }
 
     a {
@@ -21,6 +35,12 @@
         height: 100%;
         object-fit: cover;
         }
+    
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
     .logo {
         margin:0;
@@ -32,6 +52,7 @@
         text-align: center;
     }
     /* SIDE NAV BAR**/
+        
         .side-nav {
             grid-column-start: 1;
             justify-self: center;
@@ -40,6 +61,7 @@
             font-size: 22px;
             text-align: left;
             transform: translate(0, 50%);
+    
 
         }
 
@@ -56,6 +78,33 @@
         .side-nav :hover {
             color:#cce5c7;
 
+        }
+
+        @media only screen and (max-width:700px) {
+            .side-nav-ontop {
+                display: grid;
+                 grid-template-columns: 1fr 1fr 1fr;
+
+                 
+            }
+
+            .side-nav-ontop nav {
+                grid-column-start: 2;
+            }
+
+            .side-nav ul {
+                list-style: none;
+                padding-top: 50px;
+            }
+
+            .side-nav {
+                
+                grid-column-start: span 3;
+                grid-row-start: 1;
+                text-align: center;
+                justify-self: start;
+                transform: translate(0, 0px);
+                }
         }
 
 
@@ -179,16 +228,145 @@
     }
 
     .description {
+        display: grid;
         padding-left: 50px;
-
+        padding-top: 100px;
     }
 
+    @media only screen and (max-width:700px) {
+        .about-grid {
+            display: grid;
+            grid-template-rows: 15% 80% 5%;
+            grid-template-columns: 5% 90% 5%;
+            padding-top: 50px;
+        }
+        .description {
+            display: grid;
+            padding-left: 50px;
+            grid-column-start: 2;
+            grid-row-start: 2;
+            justify-items: center;
 
-
-
-
+        }
+    }
 
 
 /* PROJECTS**/
 
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 15% 80% 5%;
+        grid-template-rows: 100%;
+        padding-top: 50px;
+        
+    }
+    
 
+    .image {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        padding-left: 50px;
+
+    }
+
+    .image-content {
+        display: grid;
+        grid-row-start: 1;
+        grid-column-start: 2;
+        justify-items: center;
+        object-fit: cover;
+
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        
+
+    }
+
+    .image-pictures {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 5px;
+        grid-row-start: 1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .animation {
+        grid-row-start: 2;
+    }
+
+    .VR {
+        padding-top: 50px;
+        grid-template-rows: 3;
+    }
+
+    @media only screen and (max-width:700px) {
+        .projects-grid {
+    
+            grid-template-rows: 15% 80%  5%; 
+            grid-template-columns: 5% 90% 5%;
+            padding: 0;
+            }
+        
+        .image {
+            grid-row-start: 2;
+            grid-column-start: 2;
+            padding: 20px;
+            width: 100%
+            }
+    
+    }
+    
+/* ART **/
+
+    .art-grid {
+        display: grid;
+        grid-template-columns: 15% 80% 5%;
+        grid-template-rows: 20% 80%;
+        padding-top: 50px;
+    }
+
+    .discription {
+        grid-column-start: 2;
+        padding-left: 50px;
+        
+    }
+    .pdf-art1 {
+        grid-column-start: 2;
+        grid-row-start:2;
+        justify-content: center;
+        
+        width: 100%;
+        height: 200%;
+        padding-left: 50px;
+
+    }
+
+    @media only screen and (max-width:700px) {
+        .art-grid {
+            display: grid;
+            grid-template-rows: 15% 20% 60% 5%;
+            grid-template-columns:5% 90% 5%;
+            padding-top: 50px;
+        }
+    
+        .pdf-art1 {
+            display: grid;
+            grid-row-start: 3;
+            justify-content: center;
+            padding-top: 100px;
+            width: 100%;
+            height: 200%;
+    
+        }
+        .discription {
+            grid-column-start: 2;
+            padding-top: 100px;
+        }
+    }
+
+   
