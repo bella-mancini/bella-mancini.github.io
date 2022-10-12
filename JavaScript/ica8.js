@@ -5,9 +5,9 @@ let body = document.querySelector('body');
  //   alert('this is an alert');
 //}
 
-var button = document.querySelector("your-button-id");
-button.addEventListener("click", function(e) {
-    // e is the event object
-    // e.target is the button element
-    // do stuff with them
-});
+function revealMessage() {
+    document.getElementById("hiddenMessage").style.display = 'block';
+}
+function pleaseMessage() {
+    document.getElementById("pleaseHidden").style.display = 'block';
+}
