@@ -14,14 +14,11 @@
         box-sizing: border-box;
       }
     </style>
-    <link rel="stylesheet" href="../styles.css" />
   </head>
 
   <body>
    
-    <section class="preview">
-
-
+    <section id="myList">
 
     </section>
 
@@ -31,9 +28,10 @@
     const list = document.createElement('ul');
 
     // Add your code here
-    data.forEach((item) => {
-        list.innerText = item;
-        
+    myArray.forEach((item) => {
+        let li = document.createElement("li");
+        li.innerText = item;
+        list.appendChild(li);
       });
 
 
@@ -42,26 +40,8 @@
 
     const section = document.querySelector('section');
     section.appendChild(list);
+
   </script>
 
 </html> 
 
-<!--<!DOCTYPE html>
-<html>
-  <head> </head>
-  <body>
-    <center><h1>GeeksforGeeks</h1></center>
-    <ul id="myList"></ul>
-    <script>
-      let data = ["Ram", "Shyam", "Sita", "Gita"];
-  
-      let list = document.getElementById("myList");
-  
-      data.forEach((item) => {
-        let li = document.createElement("li");
-        li.innerText = item;
-        list.appendChild(li);
-      });
-    </script>
-  </body>
-</html>
