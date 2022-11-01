@@ -124,7 +124,7 @@ let CompJson4 = {
         "name": "Sam",
         "department": "Tech",
         "designation": "Manager",
-        "salary": 40000,
+        "salary": 44000,
         "raiseEligible": false,
         "wfh": true
         },
@@ -132,7 +132,7 @@ let CompJson4 = {
         "name": "Mary",
         "department": "Finance",
         "designation": "Trainee",
-        "salary": 18500,
+        "salary": 20350,
         "raiseEligible": false,
         "wfh": false
         },
