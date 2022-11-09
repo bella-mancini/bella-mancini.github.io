@@ -1,4 +1,4 @@
-/* PLUS MINUS NUMBER ENTER*//*
+/* PLUS MINUS NUMBER ENTER*/
 const output = document.querySelector('.output');
 let outputInt = parseInt(output.textContent);
 console.log(outputInt);
@@ -43,12 +43,13 @@ function random() {
 function randomNumber(min, max) {
     const num = Math.floor(Math.random() * (max - min + 1)) + min;
     return num;
-}*/
+}
 
 /* SLIDER*/
-var slider = document.getEelmetnBYId("myRange");
+var slider = document.getElementById("myRange");
+var sliderSubmit = document.querySelector(".slider-submit-button").addEventListener('click', update);
 var sliderOutput = document.querySelector(".slider-output");
 
 function update() {
-    sliderOutput.textContent = slider.value;
+  sliderOutput.textContent = slider.value;
 }
