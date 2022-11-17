@@ -2,7 +2,7 @@
 const qouteButton = document.querySelector('.new-quote');
 qouteButton.addEventListener('click',getQuote);
 
-const endpoint = 'http://www.thecocktaildb.com/api/json/v1/1/random.php';
+const endpoint = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
 
 async function getQuote() {
     let text = await fetch(endpoint);
