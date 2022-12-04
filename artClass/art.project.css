@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(249, 235, 225);
+    margin: 0;
+    font: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  p {
+    text-align: center;
+    justify-content: bottom;
+    color: rgb(11, 16, 85);
+    font-size: 24px;
+    padding-top: 20px;
+    
+  }
+
+  h2 {
+    text-align: left;
+    justify-content: bottom;
+    color: rgb(11, 16, 85);
+    font-size: 36px;
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.aboutUs {
+    text-align: left;
+    color: rgb(11, 16, 85);
+    font-size: 24px;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+
+  img {
+      max-width: 100%;
+      display: block;
+      float: left;
+      margin-right: 20px;
+  }
+  
+  .logo {
+    font-size: 300%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 50px 20px;
+    margin: 0 auto;
+    /*max-width: 980px;*/
+    text-align: center;
+    background-color: rgb(174, 111, 153);
+    color: rgb(249, 235, 225);
+  }
+  
+  .grid {
+    margin: 0 auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    align-self: baseline;
+  }
+  
+  nav {
+    background-color: rgb(11, 16, 85);
+    padding: .5em;
+    top: 0;
+    left: 0;
+    position: sticky;
+    font-size: 20px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+  
+  .photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* repeat(2,200px);**/
+    column-gap: 1px;
+    
+  }
+
+  .feature {
+      width: 200px;
+  }
+
+
+  .photo1-button {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .photo2-button {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .photo3-button {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .photo4-button {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .photo5-button {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .photo6-button {
+    grid-column: 3;
+    grid-row: 2;
+  }
