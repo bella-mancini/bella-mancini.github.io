@@ -8,7 +8,7 @@ body {
   p {
     text-align: center;
     justify-content: bottom;
-    color: rgb(11, 16, 85);
+    color: rgb(51, 44, 46);
     font-size: 24px;
     padding-top: 20px;
     
@@ -17,7 +17,7 @@ body {
   h2 {
     text-align: left;
     justify-content: bottom;
-    color: rgb(11, 16, 85);
+    color: rgb(51, 44, 46);
     font-size: 36px;
     padding-top: 20px;
     padding-left: 150px;
@@ -26,7 +26,7 @@ body {
 
 .aboutUs {
     text-align: left;
-    color: rgb(11, 16, 85);
+    color: rgb(51, 44, 46);
     font-size: 24px;
     padding-left: 150px;
     padding-right: 150px;
@@ -47,7 +47,7 @@ body {
     margin: 0 auto;
     /*max-width: 980px;*/
     text-align: center;
-    background-color: rgb(174, 111, 153);
+    background-color: rgb(100, 43, 56);
     color: rgb(249, 235, 225);
   }
   
@@ -59,7 +59,7 @@ body {
     max-width: 980px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     gap: 20px;
     justify-content: center;
     align-content: center;
@@ -67,7 +67,7 @@ body {
   }
   
   nav {
-    background-color: rgb(11, 16, 85);
+    background-color: rgb(51, 44, 46);
     padding: .5em;
     top: 0;
     left: 0;
