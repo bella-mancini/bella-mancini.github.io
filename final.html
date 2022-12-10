@@ -12,22 +12,53 @@
 
 
 <body>
-<h1>Ride The Bus</h1>
-
+<h1 class="logo">Ride The Bus</h1>
+<div class="grid">
+<div class="rules">
 <h2>Rules</h2>
+
 <p>there are 4 rounds in this game. In order to win you must guess correctly on each round in a row.
     If you guess wrong at any point you must drink (either a non-acoholic or acoholic) beverage and refresh the page to start over.
     You may get lucky and get off the bus or ride it all night until you give up.
 </p>
-
-<p>11= Jack 12= Queen 13= King 14= Ace</p>
-
 <p>Think you can win and get off the bus?</p>
+</div>
 
+<div class="buses">
+<img src="img/busRow.png" alt="row of buses">
+</div>
+
+<div class="game">
 <!--JAVASCRIPT-->
-<p class="output1">fart</p>
+<p>Will the card be red or black?</p>
 
-<input class="color-button" type="button" name="color-button" value="generate a card">
+<p class="output1">card value</p>
+<input id="text1" type="text">
+<input class="card-button" type="button" name="color-button" value="generate a card">
+        
 
-<script src="JavaScript/final.js"></script>
+
+<p>Will the next card number be higher or lower?</p>
+
+<p class="output2">card value</p>
+<input id="text2" type="text">
+<input class="card2-button" type="button" name="color-button" value="generate a card">
+        
+
+
+<p>Will the next card be between the two numbers or outside them?</p>
+<p class="output3">card value</p>
+<input id="text3" type="text">
+<input class="card3-button" type="button" name="color-button" value="generate a card">
+
+
+<p>Guess the last cards suit</p>
+<p class="output4">card value</p>
+<input id="text4" type="text">
+<input class="card4-button" type="button" name="color-button" value="generate a card">
+
+</div>
+
+</div>
+<script src="final.js"></script>
 </body>
