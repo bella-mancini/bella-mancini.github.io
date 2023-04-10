@@ -25,10 +25,10 @@
     }
 
     a {
-        color: #3B4E3D;
+        color: #0a415d;
     }
     a :hover {
-        color: #cce5c7;
+        color: #7ac0e3;
     }
     img{
         width: 100%;
@@ -44,7 +44,7 @@
 
     .logo {
         margin:0;
-        background-color:#3B4E3D;
+        background-color:#0a415d;
         color: #ecbab9;
         padding: 35px 20px;
         position: sticky;
@@ -131,8 +131,8 @@
 
     .home-logo {
         margin:0;
-        background-color:#FDF1E6;
-        color: #3B4E3D;
+        background-color:#ecbab9;
+        color: #0a415d;
         padding: 35px 20px;
         position: sticky;
         font-size: 250%;
