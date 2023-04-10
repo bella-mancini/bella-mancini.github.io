@@ -1,8 +1,8 @@
 
 /* ALL PAGES **/
     body {
-        background-color: #ecbab9;
-        color: #0a415d;
+        background-color: #0a415d;
+        color: #ecbab9;
         margin: 0;
         font-family: dashiell-fine, serif;
         font-style: normal;
@@ -45,7 +45,7 @@
     .logo {
         margin:0;
         background-color:#3B4E3D;
-        color: #FDF1E6;
+        color: #ecbab9;
         padding: 35px 20px;
         position: sticky;
         font-size: 250%;
