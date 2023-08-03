@@ -1,7 +1,7 @@
 
 /* ALL PAGES **/
     body {
-        background-color: #FDF1E6;
+        background-color: rgb(184, 216, 216);
         color: #0a415d;
         margin: 0;
         font-family: dashiell-fine, serif;
@@ -116,8 +116,10 @@
 /* HOME SCREEN**/
     
     .homescreen-colors {
-        background-color: #FDF1E6;
-        color: #cf2636;
+        /*background-color: rbg(184, 216, 216);**/
+        background-image: url(/img/Vector-2.jpg);
+        color: #0a415d;
+        background-size: 100px 82px;
     }
     .home-page-grid {
         display: grid;
@@ -389,7 +391,7 @@
    .row3 {
     grid-column-start: 2;
     grid-row-start: 2;
-    grid-row-end: 4;
+    
     object-fit:contain;
    }
 
