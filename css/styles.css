@@ -116,8 +116,8 @@
 /* HOME SCREEN**/
     
     .homescreen-colors {
-        /*background-color: rbg(184, 216, 216);**/
-        background-image: url(/img/Vector-2.jpg);
+        background-color: rbg(184, 216, 216);
+        /*background-image: url(/img/Vector-2.jpg);**/
         color: #0a415d;
         background-size: 100px 82px;
     }
