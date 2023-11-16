@@ -3,7 +3,7 @@ import jsonlines
 import openai
 
 # Set your OpenAI API key here
-openai.api_key = 'sk-V3yNUDQfiiZ9aThQ5tTUT3BlbkFJbipEufsL9grV61MB0dERy'
+openai.api_key = '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'
 
 def excel_to_jsonl(excel_file_path, jsonl_file_path):
     df = pd.read_excel(excel_file_path, engine='openpyxl')
