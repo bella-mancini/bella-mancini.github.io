@@ -51,23 +51,35 @@ for (i = 0; i < coll.length; i++) {
 }
 
 /* for collapsable side bar*/
-var mini = false;
+var mini2 = false;
 
 
 
 function toggleSidebar() {
   
-  if (mini) {
+  if (mini2) {
     console.log("opening sidebar");
     document.getElementById("mySidebar").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
-    this.mini = false;
+    this.mini2 = false;
   } else {
     console.log("closing sidebar");
     document.getElementById("mySidebar").style.width = "85px";
     document.getElementById("main").style.marginLeft = "85px";
-    this.mini = true;
+    this.mini2 = true;
   }
 }
 
-  toggleSidebar(mini);
+  toggleSidebar(mini2);
+///
+  /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "85px";
+  document.getElementById("main").style.marginLeft = "85px";
+}
