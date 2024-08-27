@@ -4,34 +4,6 @@ const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-/* Declaring the array of image filenames */
-
-const img = ['Photoshoot-1.jpg', `Photoshoot-2.jpg`, `Photoshoot-3.jpg`, `Photoshoot-4.jpg`, `Photoshoot-5.jpg`,'Photoshoot-6.jpg', `Photoshoot-7.jpg`, `Photoshoot-8.jpg`, `Photoshoot-9.jpg`, `Photoshoot-10.jpg`];
-const alts = {
-    'Photoshoot-1.jpg' : 'girl in purple',
-    'Photoshoot-2.jpg' : 'girl in purple',
-    'Photoshoot-3.jpg' : 'girl in red',
-    'Photoshoot-4.jpg' : 'girl in red',
-    'Photoshoot-5.jpg' : 'girl in blue',
-    'Photoshoot-6.jpg' : 'girl in purple',
-    'Photoshoot-7.jpg' : 'girl in purple',
-    'Photoshoot-8.jpg' : 'girl in red',
-    'Photoshoot-9.jpg' : 'girl in red',
-    'Photoshoot-10.jpg' : 'girl in blue'
-}
-
-/* Looping through images */
-
-for (const image of img) {
-  const newImage = document.createElement('img');
-  newImage.setAttribute('src', `img/${image}`);
-  newImage.setAttribute('alt', alts[image]);
-  thumbBar.appendChild(newImage);
-  newImage.addEventListener('click', e => {
-    displayedImage.src = e.target.src;
-    displayedImage.alt = e.target.alt;
-  });
-}
 
 /* For collapsing Box*/
 
@@ -84,10 +56,12 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "85px";
 }
 
-let slideIndex = [1,1];
-let slideId = ["mySlides1", "mySlides2"]
+/*let slideIndex = [1,1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
 showSlides(1, 0);
 showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
@@ -102,4 +76,39 @@ function showSlides(n, no) {
      x[i].style.display = "none";  
   }
   x[slideIndex[no]-1].style.display = "block";  
+}
+*/
+let slideIndex = [1, 1, 1, 1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
+
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  console.log(`Showing slides for set ${no} (class: ${slideId[no]}), slide number ${n}. Total slides: ${x.length}`);
+  
+  if (n > x.length) {
+    slideIndex[no] = 1;
+  }
+  if (n < 1) {
+    slideIndex[no] = x.length;
+  }
+  
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  
+  if (x[slideIndex[no] - 1]) {
+    x[slideIndex[no] - 1].style.display = "block";
+  } else {
+    console.log(`Error: Slide ${slideIndex[no] - 1} does not exist for set ${no}`);
+  }
 }
