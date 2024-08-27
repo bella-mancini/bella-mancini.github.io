@@ -56,7 +56,11 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "85px";
 }
 
+
+/*let slideIndex = [1,1,1,1];
+
 let slideIndex = [1,1,1,1];
+
 let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
 showSlides(1, 0);
 showSlides(1, 1);
@@ -78,4 +82,39 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";  
 }
 
+*/
+let slideIndex = [1, 1, 1, 1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
+
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  console.log(`Showing slides for set ${no} (class: ${slideId[no]}), slide number ${n}. Total slides: ${x.length}`);
+  
+  if (n > x.length) {
+    slideIndex[no] = 1;
+  }
+  if (n < 1) {
+    slideIndex[no] = x.length;
+  }
+  
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  
+  if (x[slideIndex[no] - 1]) {
+    x[slideIndex[no] - 1].style.display = "block";
+  } else {
+    console.log(`Error: Slide ${slideIndex[no] - 1} does not exist for set ${no}`);
+  }
+}
 
