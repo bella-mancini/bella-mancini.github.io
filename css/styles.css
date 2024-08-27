@@ -371,7 +371,17 @@
 
 /* PROJECTS**/
 
-    .projects-grid {
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.projects-grid {
         display: grid;
         grid-template-columns: 10% auto auto 10%;
         grid-template-rows: auto auto auto;
