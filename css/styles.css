@@ -450,7 +450,7 @@
     resize: both;
     overflow: hidden;
     position: relative;
-    
+    place-content: center;
     border: 4pt solid #090b9b;
             border-radius: 20px;
             box-sizing: border-box;
