@@ -92,6 +92,7 @@ showSlides(1, 2);
 showSlides(1, 3);
 
 function plusSlides(n, no) {
+  console.log(`Button clicked: Change slide in set ${no} by ${n}`);
   showSlides(slideIndex[no] += n, no);
 }
 

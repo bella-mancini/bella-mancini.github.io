@@ -463,6 +463,7 @@
     resize: both;
     overflow: hidden;
     position: relative;
+    align-items:center;
 
     border: 4pt solid #090b9b;
             border-radius: 20px;
@@ -637,7 +638,7 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
   height: 100%;
-  width: 71%;
+  width: 70%;
   
 }
 
