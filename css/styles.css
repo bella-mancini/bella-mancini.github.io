@@ -446,16 +446,13 @@
     grid-column: 2;
     max-width: 1000px;
     aspect-ratio: 1 / 1;
-    align-content: center;
-    resize: both;
+    resize:both;
     overflow: hidden;
-    position: relative;
     place-content: center;
     border: 4pt solid #090b9b;
             border-radius: 20px;
             box-sizing: border-box;
             width: 100%;
-    
   }
 .content-b2 {
     padding: 18px;
@@ -639,6 +636,8 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  height: 100%;
+  width: 71%;
   
 }
 
