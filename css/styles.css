@@ -6,7 +6,7 @@
     }
     
     body {
-        background-color: #ffffff;
+        background-color: #ffe5d4;
         color: #090c9b;
         margin: 0;
         font-family: Poppins, sans-serif;
@@ -55,9 +55,9 @@
 
     .logo {
         background-color:#f93943;
-        color: #ffffff;
-        grid-column-start:1;
-        grid-column-end:6;
+        color: #ffe5d4;
+        grid-column:1 / -1;
+
         position: sticky;
         font-size: 150%;
         text-align: center;
@@ -94,7 +94,7 @@
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #ffffff;
+        color: #ffe5d4;
       }
       
       .sidebar a:hover {
@@ -126,7 +126,7 @@
     .home-logo {
         margin:0;
         background-color:#090c9b;
-        color: #ffffff;
+        color: #ffe5d4;
         padding: 15px 20px;
         position: sticky;
         font-size: 200%;
@@ -168,7 +168,7 @@
 
             font-size: 30px;
             text-align: center;
-            border: 10pt solid #f93943;
+            border: 8pt solid #f93943;
             border-radius: 20px;
             box-sizing: border-box;
             width: 100%;
@@ -411,8 +411,9 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto 40% 40% auto;
+    grid-template-rows: auto ;
+    padding-bottom: 50px;
     column-gap: 24px;
     row-gap: 24px;
     
@@ -423,7 +424,7 @@
     text-align: center;
     padding: 18px;
     color:#f93943;
-    border: 4pt solid #090b9b;
+    border: 8pt solid #090b9b;
             border-radius: 20px;
             box-sizing: border-box;
             width: 100%;
@@ -442,21 +443,21 @@
 }
 .content-b1 {
     padding: 18px;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     grid-column: 2;
     max-width: 1000px;
     aspect-ratio: 1 / 1;
     resize:both;
     overflow: hidden;
     place-content: center;
-    border: 4pt solid #090b9b;
+    border: 8pt solid #090b9b;
             border-radius: 20px;
             box-sizing: border-box;
             width: 100%;
   }
 .content-b2 {
     padding: 18px;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     grid-column: 3;
     aspect-ratio: 1 / 1;
     max-width: 1000px;
@@ -465,7 +466,7 @@
     position: relative;
     align-items:center;
 
-    border: 4pt solid #090b9b;
+    border:8pt solid #090b9b;
             border-radius: 20px;
             box-sizing: border-box;
             width: 100%;
@@ -480,6 +481,76 @@
 .material-symbols-outlined {
     padding-top: 20px;
     padding-right: 50px;
+    
+}
+
+@media only screen and (max-width:700px) {
+    .projects-grid {
+        display: grid;
+        grid-template-columns: auto 80% auto;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 24px;
+        row-gap: 24px;
+        
+    }
+    .project-headers {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        text-align: center;
+        padding: 18px;
+        color:#f93943;
+        border: 8pt solid #090b9b;
+                border-radius: 20px;
+                box-sizing: border-box;
+                width: 100%;
+    
+      }
+    .section-headers {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        color:#f93943;
+    }
+    .project-name {
+        grid-column-start: 2;
+        color:#f93943;
+    }
+    .content-b1 {
+        padding: 18px;
+        /*background-color: #ffffff;*/
+        grid-column: 2;
+        max-width: 1000px;
+       /*aspect-ratio: 1 / 1;*/
+        resize:both;
+        overflow: hidden;
+        place-content: center;
+        border: 8pt solid #090b9b;
+                border-radius: 20px;
+                box-sizing: border-box;
+                width: 100%;
+      }
+    .content-b2 {
+        padding: 18px;
+        /*background-color: #ffffff;*/
+        grid-column: 2;
+        max-width: 1000px;
+        resize: both;
+        position: relative;
+        align-items:center;
+    
+        border: 8pt solid #090b9b;
+                border-radius: 20px;
+                box-sizing: border-box;
+                width: 100%;
+      }
+      .description-p {
+        padding: 8px;
+        text-align: right;
+        justify-content: end;
+        
+      }
+    
     
 }
 
@@ -670,7 +741,7 @@ img {vertical-align: middle;}
   color: #090b9b;
 }
 
-    @media only screen and (max-width:700px) {
+   /* @media only screen and (max-width:700px) {
         .projects-grid {
             display: grid;
             grid-template-columns: 15% 40% 40% 5%;
@@ -775,7 +846,7 @@ img {vertical-align: middle;}
     
         .collapsible {
             background-color: #090b9b;
-            color:#ffffff;
+            color:#ffe5d4;
             cursor: pointer;
             padding: 18px;
             width: 100%;
@@ -802,7 +873,7 @@ img {vertical-align: middle;}
             padding: 18px;
             display: none;
             overflow: hidden;
-            background-color: #ffffff;
+            background-color: #ffe5d4;
             grid-column: 2/4;
             padding-bottom: 18px;
             max-width: 964px;
@@ -840,8 +911,7 @@ img {vertical-align: middle;}
 
    .row1 {
     
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2;
     object-fit:contain;
     padding: 10px;
     align-self: center;
@@ -853,8 +923,7 @@ img {vertical-align: middle;}
     }
 
    .row2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
     /*grid-row-start: span 3;/***/
     align-self: center;
     object-fit:cover;
@@ -865,19 +934,6 @@ img {vertical-align: middle;}
     padding: 10px;
     }
    
-
-   .row3 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-
-    object-fit:contain;
-    padding: 5px;
-    align-self: center;
-   }
-   .row3 img {
-    border-radius: 30px;
-    padding: 10px;
-    }
 
 
     @media only screen and (max-width:700px) {
