@@ -448,7 +448,7 @@
     max-width: 1000px;
     aspect-ratio: 1 / 1;
     resize:both;
-    overflow:scroll;
+    overflow:hidden;
     place-content: center;
     border: 8pt solid #090b9b;
             border-radius: 20px;
@@ -462,7 +462,7 @@
     aspect-ratio: 1 / 1;
     max-width: 1000px;
     resize: both;
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
     place-content: center;
     align-items:center;
