@@ -12,7 +12,6 @@
         margin: 0;
         font-family: Poppins, sans-serif;
         font-style: normal;
-        font-size: 20px;
 
         display: grid;
         width: 100%;
@@ -29,12 +28,16 @@
     h2 {
         margin: 0;
         font-family: "poppins", serif;
-        font-style:normal;}
+        font-style:normal;
+        font-size: 30px;
+    }
+
 
     h3 {
         margin: 0;
         font-family: "poppins", serif;
         font-style:normal;
+        font-size: 24px;
 
     }
 
