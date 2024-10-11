@@ -3,7 +3,13 @@
 
     p {
         margin: 0;
-        font-size: 14px;
+        font-size: 20px;
+    }
+    @media only screen and (max-width:700px) {
+        p {
+            margin: 0;
+            font-size: 16px;
+        }
     }
     
     body {
@@ -60,7 +66,7 @@
     .logo {
         background-color:#f93943;
         color: #ffe5d4;
-        grid-column:1 / -1;
+        grid-column: span 4;
 
         position: sticky;
         font-size: 150%;
@@ -75,7 +81,7 @@
         margin-left: 0px;
         transition: margin-left 0.5s;
         width: 100%;
-    
+        overflow:hidden;
         display: grid;
         
         
@@ -415,7 +421,7 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: auto 40% 40% auto;
+    grid-template-columns: 10% 40% 40% 10%;
     grid-template-rows: auto ;
     padding-bottom: 50px;
     column-gap: 24px;
