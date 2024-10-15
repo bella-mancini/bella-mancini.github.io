@@ -502,7 +502,37 @@
     padding-right: 50px;
     
 }
+.collapsible {
+    background-color: #090b9b;
+    color:#ffe5d4;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
 
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    grid-column:2 / span 2;
+    font-family: Poppin, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color:#090b9bc9;
+  }
+  
+  .content {
+    padding: 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #fffdfd;
+    grid-column: 2/4;
+    padding-bottom: 18px;
+  }
 @media only screen and (max-width:700px) {
     .projects-grid {
         display: grid;
@@ -569,7 +599,13 @@
         justify-content: end;
         
       }
-    
+    .collapsible {
+        grid-column: 2;
+    }
+
+    .content {
+        grid-column: 2;
+    }
     
 }
 
@@ -676,40 +712,7 @@
         float: left;
     }
 
-    .collapsible {
-        background-color: #090b9b;
-        color:#ffffff;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        grid-column: 2/4;
-        font-family: Poppin, sans-serif;
-        font-weight: bold;
-        font-style: normal;
-
-        max-width: 1000px;
-        border-radius: 15px;
-        margin-bottom: 10px;
-      }
-      
-      .active, .collapsible:hover {
-        background-color:#090b9bc9;
-      }
-      
-      .content {
-        padding: 18px;
-        display: none;
-        overflow: hidden;
-        background-color: #fffdfd;
-        grid-column: 2/4;
-        padding-bottom: 18px;
-        max-width: 1000px;
-      }
+    
 
       .projectHeaders {
         grid-column-start: 2;
