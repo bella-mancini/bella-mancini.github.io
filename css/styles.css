@@ -468,6 +468,11 @@
             box-sizing: border-box;
             width: 100%;
   }
+  .content-b1 img {
+    border-radius: 12px;
+    align-items: center;
+    align-content: center;
+  }
 .content-b2 {
     padding: 18px;
     /*background-color: #ffffff;*/
