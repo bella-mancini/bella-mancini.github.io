@@ -1,0 +1,118 @@
+/* Elements **/
+h1 {
+    color: #FFE5D4;
+    font-family: "big-caslon-fb", serif;
+        font-style: normal;
+        font-size: 32px;
+
+}
+
+h2 {
+    color: #090c9b;
+    font-family: Poppins, sans-serif;
+        font-style: normal;
+        font-size: 20px;
+}
+
+h3 {
+    color: #090c9b;
+    font-family: Poppins, sans-serif;
+        font-style: normal;
+        font-size: 20px;
+}
+
+p {
+    color: #090c9b;
+    font-family: Poppins, sans-serif;
+        font-style: normal;
+        font-size: 20px;
+}
+
+a {
+
+}
+
+li {
+
+}
+
+body {
+    margin:0;
+}
+.section-titles {
+
+}
+.project-titles {
+
+}
+
+
+/* Components **/
+
+.header {
+grid-column-start: 6;
+    grid-column-end: 13;
+
+    background-color: #090c9b;
+
+min-width: 72px;
+height: 72px;
+margin-top: 32px;
+
+border-radius: 72px;
+padding: 16px;
+align-items: center;
+}
+
+.footer {
+
+}
+
+nav {
+    background-color: #F93943;
+    border-radius: 16px;
+    border: #F93943;
+
+
+}
+
+nav, a{
+    color: #FFE5D4;
+    list-style: none;
+    font-family: Poppins, sans-serif;
+        font-style: normal;
+    transition: 0.5s;
+    padding: 16px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+/* General Layouts **/
+.page-layout{
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: auto;
+    column-gap: 16px;
+
+    background-color: #FFE5D4;
+
+}
+
+.grid-layout {
+
+}
+
+/* Home Page **/
+
+.greeting {
+
+}
+
+.top-section{
+    grid-column-start: 3;
+    grid-column-end: 15;
+}
+
+
