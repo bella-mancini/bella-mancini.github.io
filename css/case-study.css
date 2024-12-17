@@ -1,3 +1,29 @@
+.cs-header {
+    grid-area: 1 / 4 / 1 / 14;
+    background-color: #090c9b;
+    min-width: 475px;
+    height:64px;
+    border-radius: 72px;
+    justify-self: center;
+    padding-left: 32px;
+    padding-top: 32px;
+    
+    color: #FFE5D4;
+        font-family: "big-caslon-fb", serif;
+            font-style: normal;
+            font-size: 32px;
+    }
+
+.cs-content-nav {
+    background-color: #F93943;
+    border-radius: 16px;
+    padding: 16px;
+    padding-top: 24px;
+    
+    grid-area: 2 / 9 / 2 / 13;
+    display: none;
+    z-index:99;
+}
 .case-study-layout {
     display: grid;
     margin: 0;
@@ -6,12 +32,12 @@
     grid-template-rows:auto;
     column-gap: 16px;
     row-gap: 16px;
-    
+    max-width: 1200px;
 }
 .p-img {
     width: 100%;
-    height: 80%;
     object-fit:cover;
+
 }
 .subheading {
     color: #F93943;
@@ -70,6 +96,7 @@
     padding-bottom: 16px;
 }
 
+
 .ER-1 {
     grid-area: 13 / 2 / 14 / 16;
     padding-bottom: 16px;
@@ -85,7 +112,15 @@
     padding-bottom: 16px;
 }
 
-.reflections {
+.reflections-1 {
     grid-area: 17 / 2 / 18 / 16;
-    padding-bottom: 16px;
+    
+}
+.reflections-2 {
+    grid-area: 18 / 2 / 19 / 16;
+    
+}
+.reflections-3 {
+    grid-area: 17 / 2 / 18 / 16;
+    padding-bottom: 72px;
 }
