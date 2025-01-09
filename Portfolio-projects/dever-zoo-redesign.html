@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/portfolio.css">
   <link rel="stylesheet" href="/css/case-study.css">
+  <link rel="stylesheet" href="/css/about.css">
   <link rel="stylesheet" href="https://use.typekit.net/apu5eah.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -12,28 +13,25 @@
 </head>
 
 
-<body class="case-study-layout">
+<body class="page-layout">
     <header> 
         <h1>Isabella Mancini's Portfolio</h1>
-        <span class="material-symbols-outlined nav-icon"><i>menu</i></span>
+        <span class="nav-icon">menu</span>
       
-          <div class="content-nav">
-            <a href="../index-1.html"><span><i class="material-symbols-outlined">home</i><span>Home</span></a><br>
+        <div class="content-nav">
+            <a href="../index.html"><span><i class="material-symbols-outlined">home</i><span>Home</span></a><br>
             <a href="../about.html"><span><i class="material-symbols-outlined">info</i><span class="icon-text"></span>About</a></span></a><br>
             <a href="../projects.html"><span><i class="material-symbols-outlined">news</i><span class="icon-text"></span>Projects</span></a><br>
             <a href="../art.html"><span><i class="material-symbols-outlined">art_track</i><span class="icon-text"></span>Art</span></a><br>
-          </div>
-          </div> 
-      </header>
-    <div class="top">
-        <h2 class="title">Denver Zoo re-design</h2>
-        <h3 class="section-title">Introduction</h3> 
-    </div>
+          </div>      
+    </header>
+
+    <h1 class="title">Denver Zoo Redesign</h1>
     
+    <div class="content-b1">
+    <video class="cs-hero" controls="autoplay"  src="/img/dz-walkthrough.mov" alt="walkthrough"></video>
     
-        <img class="hero-p" src="/img/denver-zoo-1.png" alt="denver zoo redesign hero image">
-    <div class="intro">
-        <h3 class="subheading">summary</h3>
+    <h3 class="section-headers">summary</h3>
         <p>This case study is a redesign the Denver Zoo's ticket purchasing flow. 
             The current flow was confusing, had too many screens, and overall was not
             a user friendly experience. Making this process less confusing will decrease
@@ -43,15 +41,16 @@
             yourself!
 
         </p>
-        <h3 class="subheading">Role</h3>
-        <p>I was the only designer and researcher for this redesign.
-            
+        <h3 class="section-headers">Role</h3>
+        <p>
+            I was the only designer and researcher for this redesign. 
         </p>
+    </div>
     
-    
-    <h3 class="section-title">Research</h3></div>
-    <div class="research-1">
-        <h3 class="subheading">Usability testing</h3>
+        
+    <button type="button" class="collapsible"><span class="button-icon">add </span>Research</button>
+    <div class="content">
+        <h3 class="section-headers">Usability testing</h3>
         <p>In my usability test I conducted two interviews. I then made
             an affinity map of the pain points seen below.
 
@@ -71,9 +70,8 @@
             
             </ul>
         
-    </div>
-    <div class="research-2">
-        <h3 class="subheading">Competitive analysis</h3>
+    
+        <h3 class="section-headers">Competitive analysis</h3>
         <p>In my competative analysis</p>
         <ul>
             <li>
@@ -85,9 +83,9 @@
             
             </ul>
         <img class="p-img" src="/img/competative-analysis.png" alt="denver zoo redesign hero image">
-    </div>
-    <div class="research-3">
-        <h3 class="subheading">How might we statement</h3>
+    
+    
+        <h3 class="section-headers">How might we statement</h3>
         <p>here are my three how might we statements based on 
             my competative analysis and affinity map:
         </p>
@@ -101,108 +99,98 @@
             How might we communicate topics in a more focused manner?
         </li>
         </ul>
-    </div>
+    </div>   
 
 
-    <h3 class="section-title">Design</h3>
-    <div class="design-1">
-        <h3 class="subheading">Problem statement</h3>
-        <p>Zoo lovers need a simplified way to purchase tickets and add ons 
-            on their website.
-        </p>
-    </div>
-    <div class="design-2">
-        <h3 class="subheading">User flow</h3>
-        <img class="p-img" src="/img/dz-user-journey.png" alt="user journey">
-    </div>
-    <div class="design-3">
-        <h3 class="subheading">Prototypes</h3>
-        <p>For space and quatity reasons I have screen shots of the first 
-            four wireframes at each level and a video walkthrough of the final
-            prototype.
-        </p><br>
-        <p><strong>Low fidelity wireframe: In my low fidelity wireframes I focused
-            on condensing the information to only what was nessecary. I also made 
-            the ticket flow a no scroll experience to make it more straight forward.
-        </strong> </p>
-        <img  src="/img/lf-dz.png" alt="wireframe">
-        <p>Mid fidelity wireframe: In the mid fidelity wireframe I began making everything
-            more clean and figuring out spacing.
-        </p>
-        <img  src="/img/lmf-dz.png" alt="wireframe">
-        <p>High fidelity wireframe version 1: For my high fidelity wireframe I added all my final colors
-            and made the components along with making it usable. This part was a 
-            big chunck of my project as in the midfidelity wireframe I didn't care much about being
-            pixel perfect or having detail.
-        </p>
-        <img class="wireframes p-img" src="/img/hf-dz.png" alt="wireframe">
-    </div>
-    
-    
-
-
-    <h3 class="section-title">Evaluation & results</h3>
-    <div class="ER-1">
-        <h3 class="subheading">User testing</h3>
-        <img class="wireframes p-img" src="/img/dis-guide-dz.png" alt="wireframe">
-        <p>After the first high fidelity prototype was done I conducted
-            a second round of user testing. Pain points of my re-design 
-            include.
-        </p>
-        <ul>
-            <li>
-                Consistancy with the primary buttons
-            </li>
-            <li>
-                Not enough information regarding cancellation and ticket access
-            </li>
-            <li>
-                Confusion with the general layout of the add on screen
-            </li>
-            </ul>
-    </div>
-    <div class="ER-2">
+    <button type="button" class="collapsible"><span class="button-icon">add </span>Design</button>
+    <div class="content">
+        
+            <h3 class="section-headers">Problem statement</h3>
+            <p>Zoo lovers need a simplified way to purchase tickets and add ons 
+                on their website.
+            </p>
+        
+            <h3 class="section-headers">User flow</h3>
+            <img class="p-img" src="/img/dz-user-journey.png" alt="user journey">
+        
+            <h3 class="section-headers">Prototypes</h3>
+            <p>For space and quatity reasons I have screen shots of the first 
+                four wireframes at each level and a video walkthrough of the final
+                prototype.
+            </p><br>
+            <p><strong>Low fidelity wireframe: In my low fidelity wireframes I focused
+                on condensing the information to only what was nessecary. I also made 
+                the ticket flow a no scroll experience to make it more straight forward.
+            </strong> </p>
+            <img  src="/img/lf-dz.png" alt="wireframe">
+            <p>Mid fidelity wireframe: In the mid fidelity wireframe I began making everything
+                more clean and figuring out spacing.
+            </p>
+            <img  src="/img/lmf-dz.png" alt="wireframe">
+            <p>High fidelity wireframe version 1: For my high fidelity wireframe I added all my final colors
+                and made the components along with making it usable. This part was a 
+                big chunck of my project as in the midfidelity wireframe I didn't care much about being
+                pixel perfect or having detail.
+            </p>
+            <img class="wireframes p-img" src="/img/hf-dz.png" alt="wireframe">
         
     </div>
-    <div class="ER-3">
-        <h3 class="subheading">Design changes based on feedback</h3>
-        <p>Through these interviews and going back through the  design
-            and making some notes of what I think I could do better I created 
-            this final prototype.
-        </p><br>
-        <video controls="autoplay"  src="/img/dz-walkthrough.mov" alt="walkthrough">
+    <button type="button" class="collapsible"><span class="button-icon">add </span>Evaluation & results</button>
+    <div class="content">
+        
+            <h3 class="section-headers">User testing</h3>
+            <img class="wireframes p-img" src="/img/dis-guide-dz.png" alt="wireframe">
+            <p>After the first high fidelity prototype was done I conducted
+                a second round of user testing. Pain points of my re-design 
+                include.
+            </p>
+            <ul>
+                <li>
+                    Consistancy with the primary buttons
+                </li>
+                <li>
+                    Not enough information regarding cancellation and ticket access
+                </li>
+                <li>
+                    Confusion with the general layout of the add on screen
+                </li>
+                </ul>
+        
+            
+        
+            <h3 class="section-headers">Design changes based on feedback</h3>
+            <p>Through these interviews and going back through the  design
+                and making some notes of what I think I could do better I created 
+                this final prototype.
+            </p><br>
+            <video controls="autoplay"  src="/img/dz-walkthrough.mov" alt="walkthrough">
+        
     </div>
 
-
-    <h3 class="section-title">Reflections</h3>
-    <p class="reflections">
-        <div class="reflections-3">
-            <h3 class="subheading">Future plans & conclusion</h3>
-            <p>
-                If I had more time on this I would do more user tests for my 
-                final high fidelity wireframe to make sure it is as good as possible. I also 
-                would work more on the fonts while i think it is ok but I 
-                would like to do small tweaks so it feels perfect. Overall in the future I would 
-                work in refining this expirence.
-                <br> <br>
-                I learned alot from this case study. Fisrt of all, I think it would have been more 
-                helpful to have 5 inital user test as I was only able to
-                get two it lowered the quality of my research results.
-                In the future I'm going to be more research focused and spend more
-                time on the inital planning.Because I didn't but as much detail into my 
-                mid fidelity wireframe it too a really long time to get my high fidelity 
-                prototype to where I want it to be. 
-                
-                
-   </p>
-            </p>
-        </div>
-
-
-
+    <button type="button" class="collapsible"><span class="button-icon">add </span>Reflections</button>
+    <div class="content">
+        <p class="project-name"><strong>Future plans & conclusion</strong></p>
+        <p>
+            If I had more time on this I would do more user tests for my 
+            final high fidelity wireframe to make sure it is as good as possible. I also 
+            would work more on the fonts while i think it is ok but I 
+            would like to do small tweaks so it feels perfect. Overall in the future I would 
+            work in refining this expirence.
+            <br> <br>
+            I learned alot from this case study. Fisrt of all, I think it would have been more 
+            helpful to have 5 inital user test as I was only able to
+            get two it lowered the quality of my research results.
+            In the future I'm going to be more research focused and spend more
+            time on the inital planning.Because I didn't but as much detail into my 
+            mid fidelity wireframe it too a really long time to get my high fidelity 
+            prototype to where I want it to be. 
+        </p>
+    </div>
+    
         <footer>
-            <p>Contact me: Isabellamancini122@gmail.com</p>
             <img class="p-img" src="/img/linkedin.png" alt="linkedin logo">
+            <p>Contact me: Isabellamancini122@gmail.com</p>
+            
             <p>Created by: Isabella Mancini © 2024 </p>
           </footer>
 
