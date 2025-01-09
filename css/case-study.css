@@ -1,44 +1,40 @@
 .cs-header {
-    grid-area: 1 / 4 / 1 / 14;
+    grid-column: 3 / 5;
     background-color: #090c9b;
     min-width: 475px;
     height:64px;
     border-radius: 72px;
-    justify-self: center;
     padding-left: 32px;
     padding-top: 32px;
-    
+    text-align: center;
     color: #FFE5D4;
         font-family: "big-caslon-fb", serif;
             font-style: normal;
             font-size: 32px;
     }
 
+.case-study-layout {
+    display: grid;
+    margin: 0;
+    margin-top: 32px;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    column-gap: 16px;
+    row-gap: 16px;
+}
 .cs-content-nav {
     background-color: #F93943;
     border-radius: 16px;
     padding: 16px;
     padding-top: 24px;
     
-    grid-area: 2 / 9 / 2 / 13;
+    grid-column: 4 / 5;
+    grid-row: 2;
     display: none;
     z-index:99;
 }
-.case-study-layout {
-    display: grid;
-    margin: 0;
-    margin-top: 32px;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows:auto;
-    column-gap: 16px;
-    row-gap: 16px;
-    max-width: 1200px;
-}
-.p-img {
-    width: 100%;
-    object-fit:cover;
 
-}
+
 .subheading {
     color: #F93943;
     font-family: Poppins, ;
@@ -48,17 +44,19 @@
 .title {
     text-align: center;
     padding: 32px;
+    z-index: 1;
 }
 .top {
-    grid-area: 2 / 2 / 3 / 16;
+    grid-column: 2 / 6;
+    grid-row: 2;
 }
 
 .hero-p {
-    grid-area: 3 / 2 / 4 / 16;
+    grid-column: 2 / 6;
     object-fit:cover;
 }
 .intro {
-    grid-area: 4 / 2 / 5 / 16;
+    grid-column: 2 / 6;
     
 }
 
@@ -67,60 +65,60 @@
 }
 
 .research-1 {
-    grid-area: 5 / 2 / 6 / 16;
+    grid-column: 2 / 6;
     padding-bottom: 16px;
 }
 
 .research-2 {
-    grid-area: 6 / 2 / 7 / 16;
+    grid-column: 2 / 6;
     padding-bottom: 16px;
 }
 
 .research-3 {
-    grid-area: 7 / 2 / 8 / 16;
+    grid-column: 2 / 6;
     padding-bottom: 16px;
 }
 
 .design-1 {
-    grid-area: 9 / 2 / 10 / 16;
+    grid-column: 2 / 6;
     padding-bottom: 16px;
 }
 
 .design-2 {
-    grid-area: 10 / 2 / 11 / 16;
+    grid-column: 2 / 6;
     padding-bottom: 16px;
 }
 
 .design-3 {
-    grid-area: 11 / 2 / 12 / 16;
+    grid-column: 2 / 6;
     padding-bottom: 16px;
 }
 
 
 .ER-1 {
-    grid-area: 13 / 2 / 14 / 16;
+    grid-column: 2 / 6;
     padding-bottom: 16px;
 }
 
 .ER-2 {
-    grid-area: 14 / 2 / 15 / 16;
+    grid-column: 2 / 6;
     padding-bottom: 16px;
 }
 
 .ER-3 {
-    grid-area: 15 / 2 / 16 / 16;
+    grid-column: 2 / 6;
     padding-bottom: 16px;
 }
 
 .reflections-1 {
-    grid-area: 17 / 2 / 18 / 16;
+    grid-column: 2 / 6;
     
 }
 .reflections-2 {
-    grid-area: 18 / 2 / 19 / 16;
+    grid-column: 2 / 6;
     
 }
 .reflections-3 {
-    grid-area: 17 / 2 / 18 / 16;
+    grid-column: 2 / 6;
     padding-bottom: 72px;
 }

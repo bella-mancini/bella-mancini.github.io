@@ -8,7 +8,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Isabella Mancini's Portfolio</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <!--<link rel="stylesheet" href="css/styles.css">-->
+        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/about.css">
+
         <link rel="stylesheet" href="https://use.typekit.net/apu5eah.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -16,31 +19,25 @@
     </head>
 
 
-    <body>
-        <div id="main">
-            
-            
-            <div id="mySidebar" class="sidebar" onmouseover="openNav()" onmouseout="closeNav()" >
-                <a href="index.html"><span><i class="material-symbols-outlined">home</i><span class="icon-text">home</span></a><br>
-                <a href="about.html"><i class="material-symbols-outlined">info</i><span class="icon-text"></span>about</a></span>
-                </a><br>
-                <a href="projects.html"><i class="material-symbols-outlined">news</i><span class="icon-text"></span>projects</span></a><br>
-                <a href="art.html"><i class="material-symbols-outlined">art_track</i><span class="icon-text"></span>art</span></a><br>
+    <body class="page-layout">
+        <header> 
+            <h1>Isabella Mancini's Portfolio</h1>
+            <span class="nav-icon">menu</span>
+          
+            <div class="content-nav">
+                <a href="../index.html"><span><i class="material-symbols-outlined">home</i><span>Home</span></a><br>
+                <a href="../about.html"><span><i class="material-symbols-outlined">info</i><span class="icon-text"></span>About</a></span></a><br>
+                <a href="../projects.html"><span><i class="material-symbols-outlined">news</i><span class="icon-text"></span>Projects</span></a><br>
+                <a href="../art.html"><span><i class="material-symbols-outlined">art_track</i><span class="icon-text"></span>Art</span></a><br>
+              </div>      
+            </header>
                 
-            </div>
-                
-            <div class="projects-grid">
-               <div class="logo">
-                <h1> About</h1>
-            </div> 
-            <div class="project-headers">
-                    <h2>Contact </h2>
-                    <p>isabellamancini122@gmail.com || www.linkedin.com/in/isabellamancini-</p>
-                </div>
+    <h1 class="title"> About</h1>
+           
+    
                 <h2 class="section-headers"> Academic</h2>
-                <div class="content-b1"><img src="img/academic-pic.JPG" alt="headshot"></img></div>
-                <div class="content-b2">
-                    <div class="description-p">
+                <div class="content-b1"><img src="img/academic-pic3.jpg" alt="headshot"></img>
+                    <div class="description-p-left">
                     
                         <p>
                         My name is Isabella Mancini (she/her) and I'm a current Senior at the University of Colorado Boulder.
@@ -56,11 +53,11 @@
                 
                 <h2 class="section-headers">Professional</h2>
 
-                <div class="content-b1"><img src="/img/spectrum.JPG" alt="spectrum internship image"></img></div>
-
-                <div class="content-b2">
-                    <div class="description-p">
+                <div class="content-b1"><img src="/img/atlas.png" alt="spectrum internship image"></img>
+                <!--</div><div class="content-b2">-->
+                    <div class="description-p-left">
                     <p class="project-name"><strong>Web 2200 Learning Assistant</strong></p>
+                        <p>
                         During my senior year I was an LA for Web 22000 which is an introduction to UX design and front end coding.
                         In this class I taught students how to wireframe, code in HTML, CSS, and JavaScript, and use API's and JSON's to 
                         display and manipulate data. This job experience reinforced my own knoweldge of front-end coding as well as 
@@ -71,11 +68,10 @@
                     </div>
                 </div>
                 
-                <div class="content-b1"><img src="/img/covestro3.png" alt="sketch one"></img></div>
-                <div class="content-b2">
-                    <div class="description-p">
-                        <p class="project-name"><strong>Spectrum</strong></p>
-                        
+                <div class="content-b1"><img src="/img/spectrum.JPG" alt="sketch one"></img>
+                    <div class="description-p-left">
+                    <p class="project-name"><strong>Spectrum</strong></p>
+                    <p>
                         During my 2024 summer internship with Spectrum  I interned as a Product Management Intern on the Mobile Product Team.
                         This internship gave me insight in what it's like to work in a fourtune 500 company and what goes into creating a customer 
                         facing self service platform with 32 million users. I engaged in several projects by creating Business Requirements documents
@@ -89,10 +85,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="content-b1"><img src="img/atlas.png" alt="sketch one"></img>
-                </div>
-                <div class="content-b2">
-                    <div class="description-p">
+                <div class="content-b1"><img src="img/covestro3.png" alt="sketch one"></img>
+                
+                    <div class="description-p-left">
                     <p class="project-name"><strong>Covestro</strong></p>
                     <p>
                     For the summer of 2023 I interned at Covestro as a Technology and Digitializtion intern on in their HR department. 
@@ -110,10 +105,8 @@
                  
                 <h2 class="section-headers">Personal Life</h2>
                 
-                <div class="content-b1"><img src="img/personal-pic.jpg" alt="sketch one"></div>
-                
-                <div class="content-b2">
-                    <div class="description-p">
+                <div class="content-b1"><img src="img/personal-pic.jpg" alt="sketch one">
+                    <div class="description-p-left">
                         <p>
                         Outside of my academics I like to hike, run, play guitar, read and do anything artistic. I am currently training for a 10k and one of my 
                         biggest acomplishments is that I ran a half maraton in high school. Being outside in general just brings me peace and I love 
@@ -122,15 +115,18 @@
                         </p>
                 </div>
             </div>
-
+            <footer>
+                <p>Contact me: Isabellamancini122@gmail.com</p>
+                <img class="p-img" src="/img/linkedin.png" alt="linkedin logo">
+                <p>Created by: Isabella Mancini © 2024 </p>
+              </footer>
                 
                 
                 
                 
 
                 <script src="JavaScript/projects.js"></script>
-                </div>
-                </div>
+                
 
 
                 </body>

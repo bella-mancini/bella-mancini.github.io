@@ -22,24 +22,24 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-/* For Reusable drop down*/
+/* For Reusable nav
 
-var coll = document.getElementsByClassName("collapsible-nav");
+var coll = document.getElementsByClassName("nav-icon");
 var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var content = this.closest('div').nextElementSibling;
+    var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {
       content.style.display = "block";
     }
   });
-}
+}*/
 
-/* collapsable side bar*/
+/* collapsable side bar
 var mini2 = false;
 
 
@@ -60,7 +60,7 @@ function toggleSidebar() {
 }
 
   toggleSidebar(mini2);
-///
+
   /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
@@ -72,7 +72,7 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "85px";
   document.getElementById("main").style.marginLeft = "85px";
 }
-
+///
 /* For slide deck */
 let slideIndex = [1, 1, 1, 1];
 let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
@@ -110,3 +110,10 @@ function showSlides(n, no) {
   }
 }
 
+
+/* Visibilty Nav bar */
+
+document.querySelector('.nav-icon').addEventListener('click', function () {
+  const contentNav = document.querySelector('.content-nav');
+  contentNav.classList.toggle('show');
+});

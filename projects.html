@@ -8,7 +8,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Isabella Mancini's Portfolio</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/about.css">
         <link rel="stylesheet" href="https://use.typekit.net/apu5eah.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -17,28 +18,20 @@
     </head>
 
 
-    <body> 
-      <div id="main">
+    <body class="page-layout">
+      <header> 
+          <h1>Isabella Mancini's Portfolio</h1>
+          <span class="nav-icon">menu</span>
         
-        
-   
-            <div id="mySidebar" class="sidebar" onmouseover="openNav()" onmouseout="closeNav()" >
-                <a href="index.html"><span><i class="material-symbols-outlined">home</i><span class="icon-text">home</span></a><br>
-                <a href="about.html"><i class="material-symbols-outlined">info</i><span class="icon-text"></span>about</a></span>
-                </a><br>
-                <a href="projects.html"><i class="material-symbols-outlined">news</i><span class="icon-text"></span>projects</span></a><br>
-                <a href="art.html"><i class="material-symbols-outlined">art_track</i><span class="icon-text"></span>art</span></a><br>
-                
-              </div>
-            
-        <div class="projects-grid">
-          <div class="logo">
-            <h1>Projects</h1>
-            
-          </div>
-          
+          <div class="content-nav">
+              <a href="../index.html"><span><i class="material-symbols-outlined">home</i><span>Home</span></a><br>
+              <a href="../about.html"><span><i class="material-symbols-outlined">info</i><span class="icon-text"></span>About</a></span></a><br>
+              <a href="../projects.html"><span><i class="material-symbols-outlined">news</i><span class="icon-text"></span>Projects</span></a><br>
+              <a href="../art.html"><span><i class="material-symbols-outlined">art_track</i><span class="icon-text"></span>Art</span></a><br>
+            </div>      
+          </header>
 
-          <h2 class="project-headers">Full Stack Design</h2>
+          <h1 class="title">Projects</h1>
           <h3 class="section-headers">Brand Identity</h3>
           <div class="content-b1">
             
@@ -145,10 +138,8 @@
                 <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
               
             </div>
-            </div>
-            <div class="content-b2">
               <p class="project-name"><strong> Kvadrat Really Rebranding</strong></p>
-              <div class="description-p">
+              <div class="description-p-left">
               <p>
                 During my time studying in Denmark my class did a project to redesign the fabric company Kvadrat Really. 
                 As yor read in the booklet, we research the company toured their headquaters and asked the VP questions to understand the essence of 
@@ -255,10 +246,9 @@
               </div>
               
                 
-              </div>
-              <div class="content-b2">
+             
                 <p class="project-name"><strong>Graphic Dialogs, Typography, Form, and Colors</strong></p>
-                <div class="description-p">
+                <div class="description-p-left">
                   <p>
                     During my time studying abroad in Denmark I took a Graphic Design Foundations class. In this class we did a study tour of Denmark
                     and the Netherlands in which we met with graphic designer, motion designers, and product designers to learn more about their work
@@ -272,7 +262,18 @@
               </div>
               
             <h3 class="section-headers">UX / UI Design</h3>
-          <div class="content-b1">
+            <div class="content-b1">
+              <img class="hero-img" src="/img/denver-zoo-1.png" alt="denver zoo redesign hero image">
+            <p class="project-name"><strong> Denver Zoo Redesign</strong></p>
+                <div class="description-p-left">
+                  <p>Sole researcher and designer responsible for identifying pain points in the ticket purchasing experience. Completed several iterations in order to streamline the task flow and created Figma prototype from scratch.To see more detail about my process and final prototype click the image.
+                  <br>
+                  <br>
+                  <b>Tools: Adobe Illustrator | <a href="https://xd.adobe.com/view/c0104d6b-9530-406c-afc4-06618625b764-9543/screen/76773de8-7fe0-483b-b53e-c7400a9d9e60?fullscreen" target="_blank" title="Alone Time">Adobe XD </a>| Google Forms</b></p>
+              
+                </div>          
+              </div>
+            <div class="content-b1">
             
             <div class="slideshow-container">
               <div class="mySlides4">
@@ -306,14 +307,17 @@
                   <img src="img/Communication-project-in8.jpg" style="width:100%">
                 </div>
 
+                <div class="mySlides4">
+                  <video controls="controls"> <source src="img/final-ITDT.mp4" type="video/mp4"> 
+                </div>
+
                 <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
               
             </div>
-            </div>
-            <div class="content-b2">
+            
               <p class="project-name"><strong> Trip Mate</strong></p>
-              <div class="description-p">
+              <div class="description-p-left">
                 <p>For this project my team and I had to chose a problem based around student life and use the design thinking to come up with a solution that was best for our target audience.
                   This was an empathy forward process that resulted in the protyping of an app called TripMate and a video showcasing it's use. 
                   <br><br>
@@ -349,15 +353,15 @@
                 </div>
 
                 <div class="mySlides3">
-                  <img src="img/at-1.mov" style="width:100%">
+                  <video controls="controls"> <source src="img/at-1.mov" type="video/mp4"> 
                 </div>
 
                 <div class="mySlides3">
-                  <img src="img/at-2.mov" style="width:100%">
+                  <video controls="controls"> <source src="img/at-2.mov" type="video/mp4"> 
                 </div>
 
                 <div class="mySlides3">
-                  <img src="img/at-3.mov" style="width:100%">
+                  <video controls="controls"> <source src="img/at-3.mov" type="video/mp4"> 
                 </div>
 
                 <div class="mySlides3">
@@ -368,14 +372,11 @@
                   <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
                 
               </div>
-              </div>
-              <div class="content-b2">
+              
                 <p class="project-name"><strong> Alone Time</strong></p>
-                <div class="description-p">
+                <div class="description-p-left">
                   <p> For my first introduction to design thinking I was tasked with observing the phenomenom of alone time and 
-                    how it's spent to come up with a useful app. To learn more about my process you can 
-                    <a href="https://isabellamanciniprocessblog.wordpress.com/2021/12/11/alone-time/" target="_blank" title="Read PDF">click here</a>
-                  <br>
+                    how it's spent to come up with a useful app. <br>
                   <br>
                   <b>Tools: Adobe Illustrator | <a href="https://xd.adobe.com/view/c0104d6b-9530-406c-afc4-06618625b764-9543/screen/76773de8-7fe0-483b-b53e-c7400a9d9e60?fullscreen" target="_blank" title="Alone Time">Adobe XD </a>| Google Forms</b></p>
               
@@ -385,10 +386,9 @@
               <h3 class="section-headers">Front End Development</h3>
               <div class="content-b1">
                 <img src="img/git-ss.png"></img>
-              </div>
-              <div class="content-b2">
+              
                 <p class="project-name"><strong> My Portfolio</strong></p>
-                <div class="description-p">
+                <div class="description-p-left">
                 <p>My strongest example of Frontend Development is this website. I began
                 using it to strengthen my coding skills and have gone through several
                 iteration of design. This current design has been my favorite. For 
@@ -401,7 +401,9 @@
             </div>
             
             <h3 class="project-headers">Other Skills</h3>
-            <button type="button" class="collapsible">Animation</button>
+            <button type="button" class="collapsible"><span class="button-icon">add
+    
+            </span>Animation</button>
             <div class="content">
               <p class="project-name"><strong>Balloon Town</strong></p>
               
@@ -451,10 +453,12 @@
             </div>
 
 
-            <!--<button type="button" class="collapsible">Videography and Photography</button>
+            <button type="button" class="collapsible"><span class="button-icon">add
+    
+            </span>Videography and Photography</button>
             <div class="content">
             <p class="project-name"><strong>Spring In Boulder</strong></p>
-            <video controls="controls"> <source src="img/Video-Final-Cut.mp4" type="video/mp4"> </video> 
+            <video controls="controls"> <source src="img/Final-Cut.mp4" type="video/mp4">
             <p>
             I created this emmersive film to encalsulate Boulder in spring along with a soundscape to encaplusate the envirnment. 
             The montage is progressive from March to May and I wanted to highlight Boulder's unique relationship with snow in spring, one 
@@ -464,10 +468,12 @@
             <b>
               Tools Used: Ableton | Adobe Premier Pro
             </b></p>
-            </div>-->
+            </div>
   
 
-            <button type="button" class="collapsible">Writing Samples</button>
+            <button type="button" class="collapsible"><span class="button-icon">add
+    
+            </span>Writing Samples</button>
             <div class="content">
               <p class="project-name"><strong>Design Analysis</strong></p>
               <p>This <a href="img/Design Analysis Paper.pdf" target="_blank" title="click here">analysis paper</a> was written using Norman's seven fundemental 
@@ -480,7 +486,7 @@
                 solution to help CU get closer to their goal of being carbon neutral by 2040. My team discussed with the 
                 architect several solar solutions and then evaluted those options to recommend the best 
                 course of action based on polls, comparitive research, and ROI calculations. 
-              </p>
+              </p> 
               
             </div>
               
@@ -880,10 +886,15 @@
             
             </div>
           </div>
-            
-          <script src="JavaScript/projects.js"></script>
+          <footer>
+            <p>Contact me: Isabellamancini122@gmail.com</p>
+            <img class="p-img" src="/img/linkedin.png" alt="linkedin logo">
+            <p>Created by: Isabella Mancini © 2024 </p>
+          </footer>
+          
   
             </body>
+            <script src="JavaScript/projects.js"></script>
             </html>
             
             
