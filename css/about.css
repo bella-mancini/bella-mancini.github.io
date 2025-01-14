@@ -46,7 +46,7 @@
 .content-b1 {
     padding: 18px;
     grid-column: 2 / 6;
-    max-width: 1000px;
+    max-width: 800px;
     z-index: 1;
     justify-self: center;
     /*aspect-ratio: 1 / 1;*/

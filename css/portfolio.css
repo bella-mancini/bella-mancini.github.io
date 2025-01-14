@@ -68,6 +68,10 @@ body {
     background-color: #FFE5D4;
     justify-self: center;
 }
+html, body {
+    max-width: none;
+
+}
 
 video {
     
@@ -309,9 +313,6 @@ footer p {
 
   }
 
-  .feat-projects {
-    
-  }
 
 @media only screen and (max-width:700px) {
     .page-layout{
@@ -339,10 +340,7 @@ footer p {
     }
 
     /* Nav **/
-    .material-symbols-outlined {
     
-    
-    }
     
     .material-symbols-outlined, i {
         font-size: 48px;
