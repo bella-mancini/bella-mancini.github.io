@@ -400,6 +400,10 @@ footer p {
         grid-column: 2 / 4;
     }
 
+    .greeting {
+        grid-column: 2 / 4;
+    }
+
     .row1 {
     
         grid-column: 2/3;
