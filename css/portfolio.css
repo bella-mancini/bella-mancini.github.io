@@ -278,12 +278,7 @@ footer p {
             box-sizing: border-box;
             width: 100%;
 }
-/* Denver zoo */
-.hero-img {
-    grid-column: 2 / 6;
-    object-fit:contain;
-    height: 100%;
-}
+
 
 .blurb {
     

@@ -40,7 +40,6 @@
   
   z-index: 1;
   justify-self: center;
-  /*aspect-ratio: 1 / 1;*/
   resize:both;
   overflow:hidden;
   place-content: center;
@@ -51,10 +50,6 @@
 }
 .content-b img {
   border-radius: 12px;
-  grid-column: 3 / 4;
-  align-self: center;
-  justify-self: center;
-  height: 50%;
 }
 .content-b1 {
     padding: 24px;
@@ -73,10 +68,6 @@
   }
   .content-b1 img {
     border-radius: 12px;
-    grid-column: 3 / 4;
-    align-self: center;
-    justify-self: center;
-    height: 50%;
   }
 .content-b2 {
   padding: 24px;
@@ -95,10 +86,6 @@
   }
   .content-b2 img {
     border-radius: 12px;
-    grid-column: 3 / 4;
-    align-self: center;
-    justify-self: center;
-    height: 50%;
   }
   .description-p {
     padding: 8px;
