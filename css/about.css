@@ -35,26 +35,37 @@
     z-index: 1;
 }
 .content-b {
-  padding: 24px;
-  grid-column: 2 / 6;
-  
-  z-index: 1;
-  justify-self: center;
-  resize:both;
-  overflow:hidden;
-  place-content: center;
-  border: 8pt solid #090b9b;
-          border-radius: 20px;
-          box-sizing: border-box;
-          width: 100%;
+  margin-top: 8px;
+    padding: 24px;
+    
+    flex-basis: 100%;
+    z-index: 1;
+    justify-self: center;
+    /*aspect-ratio: 1 / 1;*/
+    resize:both;
+    overflow:hidden;
+    place-content: center;
+    border: 8pt solid #090b9b;
+            border-radius: 20px;
+            box-sizing: border-box;
+            width: 100%;
 }
 .content-b img {
   border-radius: 12px;
 }
+
+.feat-projects {
+  grid-column: 2/6;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  
+}
+
 .content-b1 {
+    margin-top: 8px;
     padding: 24px;
     grid-column: 2 / 6;
-    
     z-index: 1;
     justify-self: center;
     /*aspect-ratio: 1 / 1;*/
@@ -167,22 +178,65 @@
     margin-right: auto;
   }
 
+  .filterDiv {
+    display: none; 
+  }
+
+  .show {
+    display: block;
+  }
+
+  #myBtnContainer {
+    grid-column: 2 / 6;
+    justify-self: center;
+  }
+
+  .btn {
+    background-color: #090c9b;
+    border-radius: 72px;
+    border-style: none;
+    color: #FFE5D4;
+    align-self:self-start;
+    padding: 6px;
+    margin-top: 16px;
+    
+    
+    grid-column-start: 2 ;
+    grid-column-end: 6;
+    width: 180px;
+    border: 5pt solid #090b9b;
+            border-radius: 10px;
+            box-sizing: border-box;
+  }
+  .btn.active {
+    background-color: #ffe5d4;
+    color: #090b9b;
+           
+    
+            
+  }
+  
 
 @media only screen and (max-width:700px) {
-    .project-headers {
+  .btn {
+    width: 150px;
+  }
+  #myBtnContainer {
+    grid-column: 2 / 4;}
+  .project-headers {
     grid-column: 2 / 4;
   }
 .section-headers {
     grid-column: 2 / 4;
 }
-.content-b {
+.content-b1 {
   grid-column: 2 / 4;
 }
 .content-b img {
   grid-column: 2 / 4;
 }
-.content-b1 {
-  grid-column: 2 / 4;
+.content-b {
+  flex-basis: 100%;
 }
 .content-b1 img {
   grid-column: 2 / 4;
@@ -205,10 +259,13 @@
 }
 
 @media only screen and (min-width:1400px) {
-  .content-b1 {
-    grid-column: 2 / 4;
+  .content-b {
+    flex-basis: calc(50% - 8px);
   }
   .content-b1 img {
+    grid-column: 2 / 4;
+  }
+  .content-b1 {
     grid-column: 2 / 4;
   }
   .content-b2 {
