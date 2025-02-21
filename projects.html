@@ -29,11 +29,19 @@
           </header>
 
           <h1 class="title">Projects</h1>
-
-          <h3 class="section-headers">UX / UI Design</h3>
-          <div class="content-b1">
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('UX / UI Design')">UX / UI Design</button>
+            <button class="btn" onclick="filterSelection('Motion Design')"> Motion Design</button>
+            <button class="btn" onclick="filterSelection('Software Development')"> Software Development</button>
+            <button class="btn" onclick="filterSelection('Brand Identity')"> Brand Identity</button>
+          </div>
+        
+            <div class="feat-projects">
+          
+          <div class="filterDiv UX / UI Design content-b">
             <img class="hero-img" src="/img/denver-zoo-1.png" alt="denver zoo redesign hero image">
-          <p class="project-name"><strong> Denver Zoo Redesign</strong></p>
+          <p class="project-name"><strong> Denver Zoo Redesign // UX / UI Design</strong></p>
               <div class="description-p-left">
                 <p>Sole researcher and designer responsible for identifying pain points in the ticket purchasing experience. Completed several iterations in order to streamline the task flow and created Figma prototype from scratch.
                 <br>
@@ -42,7 +50,7 @@
                 <a href="/Portfolio-projects/dever-zoo-redesign.html"><button>See more</button></a>
               </div>          
             </div>
-          <div class="content-b2">
+          <div class="filterDiv UX / UI Design content-b">
           
           <div class="slideshow-container">
             <div class="mySlides4">
@@ -85,7 +93,7 @@
             
           </div>
           
-            <p class="project-name"><strong> Trip Mate</strong></p>
+            <p class="project-name"><strong> Trip Mate // UX / UI Design</strong></p>
             <div class="description-p-left">
               <p>For this project my team and I had to chose a problem based around student life and use the design thinking to come up with a solution that was best for our target audience.
                 This was an empathy forward process that resulted in the protyping of an app called TripMate and a video showcasing it's use. 
@@ -94,7 +102,7 @@
             </div>          
           </div>
 
-          <div class="content-b1">
+          <div class="filterDiv UX / UI Design content-b">
           
             <div class="slideshow-container">
               <div class="mySlides3">
@@ -142,7 +150,7 @@
               
             </div>
             
-              <p class="project-name"><strong> Alone Time</strong></p>
+              <p class="project-name"><strong> Alone Time // UX / UI Design</strong></p>
               <div class="description-p-left">
                 <p> For my first introduction to design thinking I was tasked with observing the phenomenom of alone time and 
                   how it's spent to come up with a useful app. <br>
@@ -152,8 +160,8 @@
               </div>          
             </div>
 
-          <h3 class="section-headers">Brand Identity</h3>
-          <div class="content-b1">
+          
+          <div class="filterDiv Brand Identity content-b">
             
             <div class="slideshow-container">
               
@@ -258,7 +266,7 @@
                 <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
               
             </div>
-              <p class="project-name"><strong> Kvadrat Really Rebranding</strong></p>
+              <p class="project-name"><strong> Kvadrat Really Rebranding // Brand Identity</strong></p>
               <div class="description-p-left">
               <p>
                 During my time studying in Denmark my class did a project to redesign the fabric company Kvadrat Really. 
@@ -271,7 +279,7 @@
                        </b></p>
               </div>          
             </div>
-            <div class="content-b2">
+            <div class="filterDiv Brand Identity content-b">
             
               <div class="slideshow-container">
                 
@@ -367,7 +375,7 @@
               
                 
              
-                <p class="project-name"><strong>Graphic Dialogs, Typography, Form, and Colors</strong></p>
+                <p class="project-name"><strong>Graphic Dialogs // Brand Identity</strong></p>
                 <div class="description-p-left">
                   <p>
                     During my time studying abroad in Denmark I took a Graphic Design Foundations class. In this class we did a study tour of Denmark
@@ -382,12 +390,10 @@
               </div>
               
             
-
-              <h3 class="section-headers">Front End Development</h3>
-              <div class="content-b1">
+              <div class="filterDiv Software Development content-b">
                 <img src="img/git-ss.png"></img>
               
-                <p class="project-name"><strong> My Portfolio</strong></p>
+                <p class="project-name"><strong> My Portfolio // Software Development</strong></p>
                 <div class="description-p-left">
                 <p>My strongest example of Frontend Development is this website. I began
                 using it to strengthen my coding skills and have gone through several
@@ -400,8 +406,76 @@
               </div>
             </div>
             
+            <div class="filterDiv Motion Design content-b">
+      
+              
+              <video 
+                    controls="controls"> 
+          
+            <source src="img/Balloontown-Final-Cut.mp4" 
+                    type="video/mp4"> 
+            </video> 
+            <p class="project-name"><strong>Balloon Town // Motion Design</strong></p>
+            <div class="description-p-left">
+              <p>
+                This project is geared towards children and aims to give them 
+                comfortable about where their balloon goes when they let go of it.
+                I had so much fun creating this project and practicing animating hand illustration.
+                <br><br>
+              <b>Tools: Procreate | Adobe After Effects</b></p>
+            </div>
+          </div>
+
+          <div class="filterDiv Motion Design content-b"> 
+            
+            <video 
+                    controls="controls"> 
+          
+            <source src="img/explainer-video-Final-Cut.mp4" 
+                    type="video/mp4"> 
+            </video>
+            <p class="project-name"><strong>How To: Brainstorming // Motion Design</strong></p> 
+            <div class="description-p-left">
+              <p>
+                This animation touches on some brainstorming techniques. All 
+                assets where created by me using Adobe Illustrator and animated in 
+                Adobe After Effects. I spent alot of time learning about motion curves
+                and playing with different 2D animation shots. I hope you enjoy!
+                <br><br>
+              <b>Tools: Adobe Illustrator | Adobe After Effects</b></p>
+            </div>
+          </div>
+
+          <div class="filterDiv Motion Design content-b">
+            
+            <div class="animated-poster"><img alt="poster animation"src="img/Poster-fixed.gif"> 
+            </img> </div>
+            <p class="project-name"><strong>Still Woozy: Animated Poster // Motion Design</strong></p>
+            <div class="description-p-left">
+              <p>
+                I made this animated poster for one of my favorite albums Still Woozy's 
+                debute album "If this isn't nice what is?"
+                <br><br>
+              <b>Tools: Adobe Illustrator | Adobe After Effects</b></p>
+            
+            </div>
+            </div>
+            <div class="filterDiv Motion Design content-b"> 
+            
+              <iframe src="https://www.youtube.com/embed/yNP64b5rV9Y?si=WRChb82W-JRzKhWz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+              <p class="project-name"><strong>Spring In Boulder // Motion Design</strong></p> 
+              <div class="description-p-left">
+                <p>
+                  This immersive videography project brings the viewer into 
+                  what it's like to be in Boulder during the springtime. All 
+                  assets where filmed by me and edited using Adobe Premiere Pro.
+                  <br><br>
+                <b>Tools: Adobe Premiere Pro</b></p>
+              </div>
+            </div>
             <h3 class="project-headers">Other Skills</h3>
-            <button type="button" class="collapsible"><span class="button-icon">add
+            <!--<button type="button" class="collapsible"><span class="button-icon">add
     
             </span>Animation</button>
             <div class="content">
@@ -469,8 +543,10 @@
               Tools Used: Ableton | Adobe Premier Pro
             </b></p>
             </div>
-            <!--
-            <button type="button" class="collapsible">3D Rendering and Product Creation</button>
+            -->
+            <button type="button" class="collapsible"><span class="button-icon">add
+    
+            </span>3D Modeling and Product Design</button>
             <div class="content">
               <p>
                 In this class I learned how to 3D model in blender and turn digital models into physical models. I worked with
@@ -481,7 +557,7 @@
                 <a href="img/Form Final .pdf" target="_blank" title="Read PDF">woodworking</a>.
               </p>
              
-            </div>-->
+            </div>
 
             <button type="button" class="collapsible"><span class="button-icon">add
     
@@ -501,7 +577,7 @@
               </p> 
               
             </div>
-              
+            </div>
             <!--
             
             <button type="button" class="collapsible">Photography & Videography</button>
