@@ -257,6 +257,13 @@
 .content {
   grid-column: 2 / 4;
 }
+.feat-projects {
+  grid-column: 2/4;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  
+}
     
 }
 
